@@ -67,5 +67,7 @@ export const LOGO = '/logo.png'
 export const LOGO_MARK = '/logo-mark.png'
 
 // The Five Paws online store (separate app). Falls back to the local dev
-// server; set VITE_STORE_URL once the store has a real production domain.
-export const STORE_URL = import.meta.env.VITE_STORE_URL || 'http://localhost:3000'
+// This is the old, pre-merge copy of the clinic site (kept only as a
+// reference) — the live site now lives in ../../store, which already
+// points this at the merged app instead of a separate localhost URL.
+export const STORE_URL = import.meta.env.VITE_STORE_URL || '/en/products'
