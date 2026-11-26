@@ -32,6 +32,6 @@ export const DEFAULT_SETTINGS = {
 
 export type StoreSettings = typeof DEFAULT_SETTINGS
 
-// The Five Paws clinic site (separate app). Falls back to the local dev
-// server; set NEXT_PUBLIC_CLINIC_URL once the clinic has a production domain.
-export const CLINIC_URL = process.env.NEXT_PUBLIC_CLINIC_URL || "http://localhost:5173"
+// The clinic homepage now lives in this same Next.js app at "/" (see
+// src/app/(clinic)/*), so this is just an internal path.
+export const CLINIC_URL = "/"

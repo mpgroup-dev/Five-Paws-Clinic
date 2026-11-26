@@ -6,11 +6,14 @@ const LOCALE_COOKIE = "fps_locale"
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl
 
-  // skip static assets, api routes, and admin (admin UI is English-only)
+  // "/" is the clinic homepage (src/app/(clinic)/page.tsx) — never redirect it.
+  // Skip static assets, api routes, and admin (admin UI is English-only).
   if (
+    pathname === "/" ||
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api") ||
     pathname.startsWith("/admin") ||
+    pathname.startsWith("/images/") || // clinic gallery images
     pathname.startsWith("/products/") || // public/products images
     /\.(.*)$/.test(pathname)
   ) {
