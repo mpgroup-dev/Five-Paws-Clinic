@@ -1,0 +1,42 @@
+{
+  "name": "five-paws-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:seed-categories": "tsx prisma/seedCategories.ts",
+    "db:seed-admin": "tsx prisma/seedAdmin.ts",
+    "db:import-products": "tsx prisma/importProducts.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.4.0",
+    "bcryptjs": "^2.4.3",
+    "clsx": "^2.1.1",
+    "jose": "^5.9.6",
+    "lucide-react": "^0.456.0",
+    "nanoid": "^5.0.9",
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/turbopack": "4.3.3",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "exceljs": "^4.4.0",
+    "prisma": "^6.4.0",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5"
+  }
+}
