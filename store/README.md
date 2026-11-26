@@ -57,3 +57,5 @@ Admin: http://localhost:3000/admin/login
   `UNSPECIFIED` and flagged `needsReview`
 - 1 product ("Pet Feeder") had no price in the source Excel → imported as Draft with price 0,
   must be set by the admin before activating
+
+<!-- trigger fresh Vercel build after Root Directory fix -->
