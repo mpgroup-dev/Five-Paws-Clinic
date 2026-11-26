@@ -59,3 +59,4 @@ Admin: http://localhost:3000/admin/login
   must be set by the admin before activating
 
 <!-- trigger fresh Vercel build after Root Directory fix -->
+<!-- retry after setting Vercel Framework Preset to Next.js -->
