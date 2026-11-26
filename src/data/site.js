@@ -65,3 +65,7 @@ export const WHY_IMG = '/images/image9.jpg'
 
 export const LOGO = '/logo.png'
 export const LOGO_MARK = '/logo-mark.png'
+
+// The Five Paws online store (separate app). Falls back to the local dev
+// server; set VITE_STORE_URL once the store has a real production domain.
+export const STORE_URL = import.meta.env.VITE_STORE_URL || 'http://localhost:3000'

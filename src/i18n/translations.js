@@ -10,6 +10,7 @@ export const translations = {
       reviews: 'Reviews',
       contact: 'Contact',
       book: 'Book Appointment',
+      shop: 'Shop Now',
       brandSub: 'Veterinary Clinic',
     },
     common: {
@@ -284,6 +285,7 @@ export const translations = {
       reviews: 'التقييمات',
       contact: 'تواصل معنا',
       book: 'احجز موعد',
+      shop: 'تسوق الآن',
       brandSub: 'عيادة بيطرية',
     },
     common: {

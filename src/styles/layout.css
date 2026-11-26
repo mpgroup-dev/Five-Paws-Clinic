@@ -376,10 +376,12 @@
   .nav__toggle {
     display: inline-flex;
   }
-  .nav__book span {
+  .nav__book span,
+  .nav__shop span {
     display: none;
   }
-  .nav__book {
+  .nav__book,
+  .nav__shop {
     padding: 11px;
   }
 }

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Menu, X, PawPrint, CalendarHeart } from 'lucide-react'
+import { Menu, X, PawPrint, CalendarHeart, ShoppingBag } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import { useBooking } from '../booking/BookingContext.jsx'
-import { LOGO } from '../data/site.js'
+import { LOGO, STORE_URL } from '../data/site.js'
 
 const LINKS = [
   { id: 'home', key: 'nav.home' },
@@ -61,6 +61,15 @@ export default function Navbar() {
         </nav>
 
         <div className="nav__actions">
+          <a
+            className="btn btn--outline btn--sm nav__shop"
+            href={STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ShoppingBag size={18} />
+            <span>{t('nav.shop')}</span>
+          </a>
           <button className="btn btn--primary btn--sm nav__book" onClick={() => openBooking()}>
             <CalendarHeart size={18} />
             <span>{t('nav.book')}</span>
@@ -87,6 +96,16 @@ export default function Navbar() {
           ))}
         </nav>
         <div className="drawer__actions">
+          <a
+            className="btn btn--outline btn--block"
+            href={STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+          >
+            <ShoppingBag size={18} />
+            {t('nav.shop')}
+          </a>
           <button
             className="btn btn--primary btn--block"
             onClick={() => {
